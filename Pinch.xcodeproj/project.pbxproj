@@ -11,6 +11,10 @@
 		09321F6529CA0FB300A79424 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09321F6429CA0FB300A79424 /* ContentView.swift */; };
 		09321F6729CA0FBD00A79424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09321F6629CA0FBD00A79424 /* Assets.xcassets */; };
 		09321F6A29CA0FBD00A79424 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09321F6929CA0FBD00A79424 /* Preview Assets.xcassets */; };
+		09DB3ECD29D1F0C70003F4F3 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB3ECC29D1F0C70003F4F3 /* InfoPanelView.swift */; };
+		09DB3ECF29D485A40003F4F3 /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB3ECE29D485A40003F4F3 /* ControlImageView.swift */; };
+		09DB3ED129D491780003F4F3 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB3ED029D491780003F4F3 /* PageModel.swift */; };
+		09DB3ED329D491F80003F4F3 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB3ED229D491F80003F4F3 /* PageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		09321F6429CA0FB300A79424 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09321F6629CA0FBD00A79424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09321F6929CA0FBD00A79424 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09DB3ECC29D1F0C70003F4F3 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		09DB3ECE29D485A40003F4F3 /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
+		09DB3ED029D491780003F4F3 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		09DB3ED229D491F80003F4F3 /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		09321F6129CA0FB300A79424 /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
+				09321F7329CCACB200A79424 /* Data */,
+				09321F7229CCAC5600A79424 /* Model */,
+				09321F7129CCAC1600A79424 /* View */,
 				09321F6229CA0FB300A79424 /* PinchApp.swift */,
-				09321F6429CA0FB300A79424 /* ContentView.swift */,
+				09321F7029CCABD100A79424 /* Screen */,
 				09321F6629CA0FBD00A79424 /* Assets.xcassets */,
 				09321F6829CA0FBD00A79424 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				09321F6929CA0FBD00A79424 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09321F7029CCABD100A79424 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				09321F6429CA0FB300A79424 /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		09321F7129CCAC1600A79424 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09DB3ECC29D1F0C70003F4F3 /* InfoPanelView.swift */,
+				09DB3ECE29D485A40003F4F3 /* ControlImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		09321F7229CCAC5600A79424 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09DB3ED029D491780003F4F3 /* PageModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		09321F7329CCACB200A79424 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				09DB3ED229D491F80003F4F3 /* PageData.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DB3ECF29D485A40003F4F3 /* ControlImageView.swift in Sources */,
+				09DB3ED129D491780003F4F3 /* PageModel.swift in Sources */,
 				09321F6529CA0FB300A79424 /* ContentView.swift in Sources */,
 				09321F6329CA0FB300A79424 /* PinchApp.swift in Sources */,
+				09DB3ED329D491F80003F4F3 /* PageData.swift in Sources */,
+				09DB3ECD29D1F0C70003F4F3 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +321,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +351,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
